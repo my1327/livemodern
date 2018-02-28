@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="作者名">
+    <title>绿色摩登</title>
+    <link rel="stylesheet" href="css/basic.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="headBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="left_topBar">
+                <div class="topBar_wrap">
+                    <div class="login">
+                        <a href="#">[ 登录 ]</a>
+                    </div><!--login-->
+                    <div class="login_user clearFix hidden">
+                        <div class="left_user">
+                            <div class="leftUser_top"><span>登录</span></div>
+                            <div class="leftUser_center"><span>注册</span></div>
+                            <div class="leftUser_bottom"><span>忘记密码</span></div>
+                        </div><!--left_user-->
+                        <div class="right_user">
+                            <div class="right_userLogin">
+                                <div class="right_userLogin_tel">
+                                    <input type="text" title="" placeholder="手机号">
+                                </div><!--rightUser_tel-->
+                                <div class="right_userLogin_password">
+                                    <input type="text" title="" placeholder="密码">
+                                </div><!--rightUser_password-->
+                                <div class="qq"></div><!--qq-->
+                                <div class="weixin">
+                                    <!--<img src="img/weixin.png">-->
+                                </div><!--weixin-->
+                                <div class="login_btn">
+                                    <input type="button" value="">登 录
+                                </div><!--login_btn-->
+                            </div><!--right_userLogin-->
+                            <div class="right_userRegister hidden">
+                                <div class="right_userRegister_tel">
+                                    <input type="text" title="" placeholder="手机号">
+                                </div><!--right_userRegister_tel-->
+                                <div class="right_userRegister_password">
+                                    <input type="text" title="" placeholder="密码">
+                                </div><!--right_userRegister_password-->
+                                <div class="password_confirm">
+                                    <input type="text" title="" placeholder="确认密码">
+                                </div><!--password_confirm-->
+                                <div class="concept clearFix">
+                                    <input type="checkbox" title="">
+                                    <p>我已仔细阅读并接受《通行证协议》</p>
+                                </div><!--concept-->
+                                <div class="register_btn">
+                                    <input type="button" value="">注 册
+                                </div><!--register_btn-->
+                            </div><!--right_userRegister-->
+                            <div class="right_reset hidden">
+                                <div class="reset_top">
+                                    <p>密码重置</p>
+                                </div><!--reset_top-->
+                                <div class="reset_tel">
+                                    <input type="text" title="" placeholder="请输入注册使用的手机号">
+                                </div><!--reset_tel-->
+                                <div class="right_note clearFix">
+                                    <div class="get_note">
+                                        <input type="text" title="" placeholder="短信验证码">
+                                    </div><!--get_note-->
+                                    <div class="set_note">
+                                        <input type="button" value="获取短信验证码">
+                                    </div><!--set_note-->
+                                </div><!--right_note-->
+                                <div class="next">
+                                    <input type="button" value="下一步">
+                                </div><!--next-->
+                            </div><!--right_reset-->
+                        </div>
+                    </div><!--login_user-->
+                </div><!--topBar_wrap-->
+                <div class="comWidth">
+                    <div class="qq_show clearFix hidden">
+                        <div class="qqShow_top">
+                            <div class="left_show">
+                                <a href="#">
+                                    <img src="img/qie.png">
+                                </a>
+                                <p>QQ登录</p>
+                            </div><!--left_show-->
+                            <div class="right_show">
+                                <a href="#">
+                                    <img class="question" src="img/question.png">
+                                </a>
+                                <ul class="rightShow_list">
+                                    <li>
+                                        <a href="#">QQ登录 |</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">授权管理 |</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">申请接入</a>
+                                    </li>
+                                </ul>
+                                <a href="#">
+                                    <img class="close" src="img/close.png">
+                                </a>
+                            </div><!--right_show-->
+                        </div><!--qqShow_top-->
+                        <div class="qqShow_content">
+                            <p class="safe">快速安全登录</p>
+                            <p class="scale">使用<span>QQ手机版</span>扫描二维码，或点击头像授权登录。</p>
+                            <img class="er" src="img/qq二维码.png">
+                            <img class="head" src="img/qq头像.png">
+                            <p class="name">____only</p>
+                        </div><!--qqShow_content-->
+                    </div><!--qq_show-->
+                </div><!--comWidth-->
+                <div class="comWidth">
+                    <div class="weixin_show hidden">
+                        <div class="weixin_login clearFix">
+                            <p>微信登录</p>
+                            <img class="close1" src="img/close1.png">
+                        </div><!--weixin_login-->
+                        <div class="weixin_img">
+                            <img src="img/weixin_img.png">
+                        </div><!--weixin_img-->
+                        <div class="weixinShow_bottom">
+                            <p>请使用微信扫描二维码登录</p>
+                        </div>
+                    </div><!--weixin_show-->
+                </div>
+            </div><!--left_topBar-->
+            <div class="top-right">
+                <!--购物车部分-->
+                <a class="car" href="javascript:;"><img src="img/car1.png"> 购物车( <label class="car-all" style="color:#f00;">0</label>件 )</a>
+                <!--我的订单-->
+                <img src="img/123.png"><a class="my-order" href="javascript:;">我的订单 </a><img src="img/123.png">
+                <!--我的收藏+客户服务部分-->
+                <a class="my-col" href="javascript:;">我的收藏 </a><img src="img/123.png"><a class="cust" href="http://www.baidu.com">客户服务 </a>
+            </div>
+        </div><!--comWidth-->
+    </div><!--topBar-->
+    <div class="comWidth">
+        <div class="search">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png">
+                </a>
+                <p>绿色摩登农业科技投资管理（苏州）有限公司</p>
+            </div><!--logo-->
+            <div id="searchInput" class="search_input">
+                <input type="text" title="" placeholder="时鲜蔬菜">
+            </div><!--search_input-->
+            <div class="search_btn">
+                <input type="button" value="搜索">
+            </div><!--search_btn-->
+        </div><!--search-->
+        <div class="shopClass clearFix">
+            <div class="shopClass_list fl mr first">全部分类</div>
+            <div class="shopClass_list fl mr normal">品牌街</div>
+            <div class="shopClass_list fl mr normal">优选生鲜</div>
+            <div class="shopClass_list fl mr normal">积分商城</div>
+            <div class="shopClass_list fl mr normal">美食汇</div>
+            <div class="shopClass_list fl mr normal">在线咨询</div>
+            <div class="shopClass_list fl mr normal">本地商家</div>
+            <div class="shopClass_list fl normal">菜谱</div>
+        </div><!--shopClass-->
+    </div><!--comWidth-->
+</div><!--headBar-->
+<div class="contentWrap">
+    <div class="contentPic">
+        <div id="imgBox" class="imgBox">
+            <ol id="imgBox_list" class="imgBox_list">
+                <li>
+                    <a href="#">
+                        <img src="">
+                    </a>
+                </li>
+            </ol>
+            <div id="imgNum" class="imgNum"></div><!--imgNum-->
+            <div class="comWidth">
+                <div class="imgBtn">
+                    <a id="left_btn" class="left_btn"><img src="img/left.png"></a>
+                    <a id="right_btn" class="right_btn"><img src="img/right.png"></a>
+                </div><!--imgBtn-->
+            </div>
+        </div><!--imgBox-->
+    </div><!--contentPic-->
+    <div class='typ one'>
+        <!--分类名-->
+        <div class="one name">
+            <div class="bigtype">水果蔬菜</div>
+            <div class="rementop">热门top</div>
+            <div class="typlist">
+                <ul>
+                    <li><a href="http://www.baidu.com" target="_blank">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--分类大图-->
+        <div class="one bimg"><a href=""><img src="img/20160615110815.png"></a></div>
+        <!--分类小图-->
+        <div class="one simg" style="margin-top:-3px;">
+            <table class="one tab">
+                <tr class="tr-one" data-bind="foreach:simgs">
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td style="border-width:0 0 1px 0"><a href=""><span class="sp1">111</span><span
+                            class="sp2">111</span><img src="img/1111.png"/></a></td>
+                </tr>
+                <tr class="tr-two">
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td style="border-width:0 0 0 0"><a href=""><span class="sp1">111</span><span class="sp2">111</span><img
+                            src="img/1111.png"/></a></td>
+                </tr>
+            </table>
+        </div>
+        <!--热销列表-->
+        <div class="one list">
+            <div class="lisp">热销列表</div>
+            <ul>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--分类样式二-->
+    <div class='typ two'>
+        <!--分类名-->
+        <div class="one name">
+            <div class="bigtype">水果蔬菜</div>
+            <div class="rementop">热门top</div>
+            <div class="typlist">
+                <ul>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--样式三具体-->
+        <div class="th-img">
+            <div class="tls"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span class="pro-prn">¥259.00</span><span
+                    class="pro-pr">¥300.00</span><img src="./img/1212.png"></a></div>
+            <div class="tls"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span class="pro-prn">¥259.00</span><span
+                    class="pro-pr">¥300.00</span><img src="./img/1212.png"></a></div>
+            <div class="tls" style="border:0px;"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span
+                    class="pro-prn">¥259.00</span><span class="pro-pr">¥300.00</span><img src="./img/1212.png"></a>
+            </div>
+        </div>
+        <!--热销列表-->
+        <div class="one list">
+            <div class="lisp">热销列表</div>
+            <ul>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--分类样式三-->
+    <div class='typ three'>
+        <!--分类名-->
+        <div class="one name">
+            <div class="bigtype">水果蔬菜</div>
+            <div class="rementop">热门top</div>
+            <div class="typlist">
+                <ul>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--分类小图-->
+        <div class="one simg">
+            <table class="one tab">
+                <tr class="tr-one">
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td style="border-width:0 0 1px 0"><a href=""><span class="sp1">111</span><span
+                            class="sp2">111</span><img src="img/1111.png"/></a></td>
+                </tr>
+                <tr class="tr-two">
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td><a href=""><span class="sp1">111</span><span class="sp2">111</span><img src="img/1111.png"/></a>
+                    </td>
+                    <td style="border-width:0 0 0 0"><a href=""><span class="sp1">111</span><span class="sp2">111</span><img
+                            src="img/1111.png"/></a></td>
+                </tr>
+            </table>
+        </div>
+        <!--分类大图-->
+        <div class="one bimg"><a href=""><img src="img/20160615110815.png"></a></div>
+        <!--热销列表-->
+        <div class="one list">
+            <div class="lisp">热销列表</div>
+            <ul>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class='typ two last'>
+        <!--分类名-->
+        <div class="one name">
+            <div class="bigtype">水果蔬菜</div>
+            <div class="rementop">热门top</div>
+            <div class="typlist">
+                <ul>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                    <li><a href="">水果蔬菜</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--样式三具体-->
+        <div class="th-img">
+            <div class="tls"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span class="pro-prn">¥259.00</span><span
+                    class="pro-pr">¥300.00</span><img src="./img/1212.png"></a></div>
+            <div class="tls"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span class="pro-prn">¥259.00</span><span
+                    class="pro-pr">¥300.00</span><img src="./img/1212.png"></a></div>
+            <div class="tls" style="border:0px;"><a href=""><span class="pro-name">完达山邦优金装邦优幼儿配方羊奶粉三段900克</span><span
+                    class="pro-prn">¥259.00</span><span class="pro-pr">¥300.00</span><img src="./img/1212.png"></a>
+            </div>
+        </div>
+        <!--热销列表-->
+        <div class="one list">
+            <div class="lisp">热销列表</div>
+            <ul>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+                <li><a href=""><img src="img/20160615105956.png"><span
+                        class="lna">徐香猕猴桃 毁包赔 奇异果 绿果猕猴桃 新鲜水果SG</span><span class="lpr">¥23.0</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!--contentWrap-->
+<div class="mb_50"></div>
+<div class="footer">
+    <div class="comWidth">
+        <div class="footer_service">
+            <div class="service_list">
+                <img src="img/new.png">
+                <dl>
+                    <dt>新手上路</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/pay.png">
+                <dl>
+                    <dt>付款方式</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/car.png">
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/protect.png">
+                <dl class="protect">
+                    <dt>消费者保障</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/partner.png">
+                <dl>
+                    <dt>招商合作</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+        </div><!--footer_service-->
+        <div class="footerBottom">
+            <div class="footer_link">
+                <a href="#">首页</a>
+                <img src="img/footerImg.png">
+                <a href="#">关于我们</a>
+                <img src="img/footerImg.png">
+                <a href="#">联系我们</a>
+                <img src="img/footerImg.png">
+                <a href="#">商家入驻</a>
+            </div><!--footer_link-->
+            <div class="record_number">
+                备案号：苏ICP备16029992号
+            </div><!--record_number-->
+        </div><!--footerBottom-->
+    </div><!--comWidth-->
+</div><!--footer-->
+<div class="mb_30"></div>
+</body>
+</html>

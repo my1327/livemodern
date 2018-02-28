@@ -1,0 +1,274 @@
+/*分类部分*/
+/*样式一、二*/
+.typ {
+    width: 1210px;
+    height: 354px;
+    border: 1px solid #2fc208;
+    margin: 0 auto;
+}
+
+.typ {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.typ a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity:50);
+}
+
+
+
+/*分类名列表*/
+.name {
+    width: 126px;
+    height: 354px;
+    float: left;
+    color: #2fc208;
+    background-color: #fefefd;
+}
+
+.name .bigtype {
+    width: 126px;
+    height: 71px;
+    line-height: 71px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fcfdf9;
+}
+
+.name .rementop {
+    width: 120px;
+    float: right;
+    border-bottom: 1px solid #2fc208;
+    background-color: #fcfdf9;
+}
+
+.name .typlist {
+    width: 120px;
+    height: auto;
+    float: left;
+    text-align: left;
+    margin-left: 5px;
+    background-color: #fefefd;
+}
+
+.typlist ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.typlist li {
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+    width: 120px;
+}
+
+.typlist li a {
+    display: inline-block;
+    color: #2FC208;
+    width: 120px;
+}
+
+.typlist li a:active {
+    color: #f88721;
+}
+
+/*分类大图部分*/
+.bimg {
+    width: 327px;
+    height: 354px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.bimg a {
+    width: 327px;
+    height: 354px;
+
+}
+
+.bimg img {
+    display: inline;
+    width: 327px;
+    height: 354px;
+}
+
+/*分类六图小图部分*/
+.simg {
+    width: 450px;
+    height: 354px;
+    float: left;
+    margin-left: 10px;
+}
+
+.simg table {
+    width: 450px;
+    height: 344px;
+    margin-top: 5px;
+    border-spacing: 0;
+}
+
+.tr-one td {
+    border: dashed #33a63f;
+    border-width: 0 1px 1px 0;
+}
+
+.tr-two td {
+    border: dashed #33a63f;
+    border-width: 0 1px 0 0;
+}
+
+.simg .sp1 {
+    font-size: 16px;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #000000;
+}
+
+.simg .sp2 {
+    font-size: 14px;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #2FC208;
+}
+
+.simg img {
+    width: 140px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+/*热销列表*/
+.list {
+    width: 270px;
+    height: 354px;
+    float: right;
+    margin-right: 5px;
+    display: inline;
+    background-color: #FcFdf9;
+}
+
+.list .lisp {
+    border-bottom: 1px solid #2FC208;
+    width: 270px;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 2px;
+    padding-bottom: 2px;;
+    height: 20px;
+    color: #2FC208;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list ul {
+    margin-top: 4px;
+    float: left;
+}
+
+.list li {
+    width: 270px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+
+.list img {
+    width: 76px;
+    height: 68px;
+    float: left;
+}
+
+.list span {
+    float: left;
+    width: 188px;
+    font-size: 12px;
+    color: #2FC208;
+    margin-left: 2px;
+}
+
+.list .lisp:active {
+    color: #f88721;
+
+}
+
+.list .lpr {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*样式二-三图部分*/
+.th-img {
+    width: 778px;
+    height: 354px;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+.th-img .tls {
+    width: 240px;
+    height: auto;
+    float: left;
+    margin: 15px 0 5px 1px;
+    padding: 0 0 0 16px;
+    border-right: dashed 1px #33a63f;
+}
+
+.pro-name {
+    width: 226px;
+    height: 52px;
+    float: left;
+    line-height: 26px;
+    color: #000000;
+}
+
+.pro-prn {
+    width: 60px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 4px;
+    float: left;
+    color: #2FC208;
+    margin: 15px 15px 0 0;
+}
+
+.pro-pr {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 8px;
+    color: #A9A9A9;
+    float: left;
+    margin-top: 15px;
+    text-decoration: line-through;
+}
+
+.tls img {
+    width: 226px;
+    height: 226px;
+    float: left;
+    margin-top: 10px;
+}
+
+.top-right a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.top-right a:active {
+    color: #aacf52;
+}
+

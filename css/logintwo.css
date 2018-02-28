@@ -1,0 +1,161 @@
+/*logo*/
+.logo{
+    width: 246px;
+    height: 100px;
+    text-align: center;
+    margin: 50px auto;
+}
+.logo p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+}
+/*login_box*/
+input{
+    vertical-align: middle;
+}
+.login_box{
+    width: 440px;
+    margin:100px auto 50px auto;
+    text-align: right;
+}
+input:focus{
+    border: 1px solid #abd45b;
+}
+.phone_input{
+    width: 345px;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    font-size: 14px;
+    padding-left: 3px;
+}
+label{
+    font-size: 16px;
+    color: #1d1d1d;
+    margin-right:12px;
+}
+.cell_phone{
+    margin-bottom: 16px;
+    float: right;
+}
+.cell_phone p{
+    font-size: 12px;
+    color: #ff0000;
+    line-height: 22px;
+    width: 350px;
+    height: 22px;
+    float: right;
+    text-align: left;
+}
+.phone_pin{
+    margin-bottom: 16px;
+    float: right;
+}
+.pin_btn{
+    width: 164px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    margin-left:9px; 
+    color: #1d1d1d;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+  
+}
+.pin_input{
+    width: 172px;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    margin: 0;
+}
+.phone_pin p{
+    font-size: 12px;
+    color: #ff0000;
+    line-height: 22px;
+    width: 350px;
+    height: 22px;
+    float: right;
+    text-align: left;
+
+}
+.newpassword{
+    float: right;
+}
+.newpassword_point{
+    font-size: 12px;
+    line-height: 22px;
+    color: #4f4f4f;
+     width: 350px;
+    height: 22px;
+    float: right;
+    text-align: left;
+}
+.newpassword_input{
+    width: 348px;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    font-size: 14px;
+}
+
+.newpassword_error{
+    font-size: 12px;
+    color: #ff0000;
+    line-height: 16px;
+     width: 350px;
+    height: 16px;
+    float: right;
+    text-align: left;
+}
+.surepassword{
+    margin-bottom: 16px;
+    float: right;
+}
+.surepassword_input{
+    width: 348px;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    font-size: 14px;
+}
+.surepassword p{
+    font-size: 12px;
+    color: #ff0000;
+    line-height: 22px;
+    width: 350px;
+    height: 22px;
+    float: right;
+    text-align: left;
+}
+.reset_btn{
+    width: 350px;
+    height: 40px;
+    background: #abd45b;
+    border: 1px solid #abd45b;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*footer*/
+.login_footer{
+     width: 100%;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+.login_footer span{
+    margin: 0 13px;
+}
+.login_footer p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #727171;
+}
+.login_footer p a{
+    color: #727171;
+}
+.login_footer p a:hover{
+    color: #abd45b;
+}

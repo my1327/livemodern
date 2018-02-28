@@ -1,0 +1,752 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="作者名">
+    <title>绿色摩登</title>
+    <link rel="stylesheet" href="css/basic.css" type="text/css">
+    <link rel="stylesheet" href="css/second.css" type="text/css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/second.js"></script>
+</head>
+<body>
+<div class="float-btn">
+    <div class="float-right">
+        <ul>
+            <li class="to-search"><a href="javascript:;"><img src="img/search1.png"></a></li>
+            <li class="to-top"><a href="javascript:;"><img src="img/to-top.png"></a></li>
+        </ul>
+    </div>
+    <div class="to-se"><input class="input" title="" type="text" placeholder="时鲜果蔬"><input type="button" class="btn"
+                                                                                           value="搜索"/></div>
+</div>
+<div class="headBar">
+    <div class="topBar">
+        <div class="comWidth red">
+            <div class="left_topBar">
+                <div class="topBar_wrap">
+                    <div class="login">
+                        <a href="#">[ 登录 ]</a>
+                    </div><!--login-->
+                    <div class="login_user clearFix hidden">
+                        <div class="left_user">
+                            <div class="leftUser_top"><span>登录</span></div>
+                            <div class="leftUser_center"><span>注册</span></div>
+                            <div class="leftUser_bottom"><span>忘记密码</span></div>
+                        </div><!--left_user-->
+                        <div class="right_user">
+                            <div class="right_userLogin">
+                                <div class="right_userLogin_tel">
+                                    <input type="text" title="" placeholder="手机号">
+                                </div><!--rightUser_tel-->
+                                <div class="right_userLogin_password">
+                                    <input type="text" title="" placeholder="密码">
+                                </div><!--rightUser_password-->
+                                <div class="qq"></div><!--qq-->
+                                <div class="weixin">
+                                    <!--<img src="../firstPage/img/weixin.png">-->
+                                </div><!--weixin-->
+                                <div class="login_btn">
+                                    <input type="button" value="">登 录
+                                </div><!--login_btn-->
+                            </div><!--right_userLogin-->
+                            <div class="right_userRegister hidden">
+                                <div class="right_userRegister_tel">
+                                    <input type="text" title="" placeholder="手机号">
+                                </div><!--right_userRegister_tel-->
+                                <div class="right_userRegister_password">
+                                    <input type="text" title="" placeholder="密码">
+                                </div><!--right_userRegister_password-->
+                                <div class="password_confirm">
+                                    <input type="text" title="" placeholder="确认密码">
+                                </div><!--password_confirm-->
+                                <div class="concept clearFix">
+                                    <input type="checkbox" title="">
+                                    <p>我已仔细阅读并接受《通行证协议》</p>
+                                </div><!--concept-->
+                                <div class="register_btn">
+                                    <input type="button" value="">注 册
+                                </div><!--register_btn-->
+                            </div><!--right_userRegister-->
+                            <div class="right_reset hidden">
+                                <div class="reset_top">
+                                    <p>密码重置</p>
+                                </div><!--reset_top-->
+                                <div class="reset_tel">
+                                    <input type="text" title="" placeholder="请输入注册使用的手机号">
+                                </div><!--reset_tel-->
+                                <div class="right_note clearFix">
+                                    <div class="get_note">
+                                        <input type="text" title="" placeholder="短信验证码">
+                                    </div><!--get_note-->
+                                    <div class="set_note">
+                                        <input type="button" value="获取短信验证码">
+                                    </div><!--set_note-->
+                                </div><!--right_note-->
+                                <div class="next">
+                                    <input type="button" value="下一步">
+                                </div><!--next-->
+                            </div><!--right_reset-->
+                        </div>
+                    </div><!--login_user-->
+                </div><!--topBar_wrap-->
+                <div class="comWidth">
+                    <div class="qq_show clearFix hidden">
+                        <div class="qqShow_top">
+                            <div class="left_show">
+                                <a href="#">
+                                    <img src="img/qie.png">
+                                </a>
+                                <p>QQ登录</p>
+                            </div><!--left_show-->
+                            <div class="right_show">
+                                <a href="#">
+                                    <img class="question" src="img/question.png">
+                                </a>
+                                <ul class="rightShow_list">
+                                    <li>
+                                        <a href="#">QQ登录 |</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">授权管理 |</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">申请接入</a>
+                                    </li>
+                                </ul>
+                                <a href="#">
+                                    <img class="close" src="img/close.png">
+                                </a>
+                            </div><!--right_show-->
+                        </div><!--qqShow_top-->
+                        <div class="qqShow_content">
+                            <p class="safe">快速安全登录</p>
+                            <p class="scale">使用<span>QQ手机版</span>扫描二维码，或点击头像授权登录。</p>
+                            <img class="er" src="img/qq二维码.png">
+                            <img class="head" src="img/qq头像.png">
+                            <p class="name">____only</p>
+                        </div><!--qqShow_content-->
+                    </div><!--qq_show-->
+                </div><!--comWidth-->
+                <div class="comWidth">
+                    <div class="weixin_show hidden">
+                        <div class="weixin_login clearFix">
+                            <p>微信登录</p>
+                            <img class="close1" src="img/close1.png">
+                        </div><!--weixin_login-->
+                        <div class="weixin_img">
+                            <img src="img/weixin_img.png">
+                        </div><!--weixin_img-->
+                        <div class="weixinShow_bottom">
+                            <p>请使用微信扫描二维码登录</p>
+                        </div>
+                    </div><!--weixin_show-->
+                </div>
+            </div><!--left_topBar-->
+            <div class="top-right">
+                <!--购物车部分-->
+                <a class="car" href="javascript:;"><img src="img/car1.png"> 购物车( <label class="car-all"
+                                                                                        style="color:#f00;">0</label>件)</a>
+                <!--我的订单-->
+                <img src="img/123.png"><a class="my-order" href="javascript:;">我的订单 </a><img src="img/123.png">
+                <!--我的收藏+客户服务部分-->
+                <a class="my-col" href="javascript:;">我的收藏 </a><img src="img/123.png"><a class="cust"
+                                                                                         href="http://www.baidu.com">客户服务 </a>
+            </div>
+        </div><!--comWidth-->
+    </div><!--topBar-->
+    <div class="comWidth">
+        <div class="search">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png">
+                </a>
+                <p>绿色摩登农业科技投资管理（苏州）有限公司</p>
+            </div><!--logo-->
+            <div id="searchInput" class="search_input">
+                <input type="text" title="" class="input" placeholder="时鲜蔬菜">
+            </div><!--search_input-->
+            <div class="search_btn">
+                <input type="button" value="搜索">
+            </div><!--search_btn-->
+        </div><!--search-->
+        <div class="shopClass clearFix">
+            <div class="shopClass_list fl mr first">全部分类</div>
+            <div class="shopClass_list fl mr normal"><span>品牌街</span></div>
+            <div class="shopClass_list fl mr normal"><span>优选生鲜</span></div>
+            <div class="shopClass_list fl mr normal"><span>积分商城</span></div>
+            <div class="shopClass_list fl mr normal"><span>美食汇</span></div>
+            <div class="shopClass_list fl mr normal"><span>在线咨询</span></div>
+            <div class="shopClass_list fl mr normal"><span>本地商家</span></div>
+            <div class="shopClass_list fl normal"><span>菜谱</span></div>
+        </div><!--shopClass-->
+    </div><!--comWidth-->
+</div><!--headBar-->
+<div class="typeBox"><!--type start-->
+    <div class="typeTop"><!--typeTop start-->
+        <div class="Top bigbg"><!--Top bigbg start-->
+            <a href="#"><img src="./img/bigbg.png"/></a>
+        </div><!--Top bigbg end-->
+        <div class="Top smallbg"><!--Top smallbg start-->
+            <div class="smbg left"><a href="#"><img src="img/smallbg1.png" alt="重庆味道"/></a></div>
+            <div class="smbg right"><a href="#"><img src="img/smallbg2.png"/></a></div>
+            <div class="smbg left bottom"><a href="#"><img src="img/smallbg2.png"/></a></div>
+            <div class="smbg right bottom"><a href="#"><img src="img/smallbg1.png"/></a></div>
+        </div><!--Top smallbg end-->
+        <div class="Top-list"><!--Top-list start-->
+            <ul>
+                <li><a href="#">味好美百里香叶198g 香草香料 西餐 牛肉干 </a></li>
+                <li><a href="#">康师傅方便面 红烧牛肉面香辣牛肉面 经典味道早餐</a></li>
+                <li><a href="#">味好美百里香叶198g 香草香料 西餐 牛肉干 </a></li>
+                <li><a href="#">百草味 牛肉干 肉类零食 </a></li>
+                <li><a href="#">康师傅方便面 红烧牛肉面香辣牛肉面 经典味道早餐</a></li>
+                <li><a href="#">百草味 牛肉干 肉类零食</a></li>
+                <li><a href="#">康师傅方便面 红烧牛肉面香辣牛肉面 经典味道早餐</a></li>
+            </ul>
+        </div><!--Top-list end-->
+    </div><!--typeTop end-->
+    <div class="type_ch"><!--type_ch start-->
+        <span>全部分类</span>&gt;<a href=""><span>米油副食</span></a>
+    </div><!--type_ch end-->
+    <div class="typeall"><!--typeall start-->
+        <div class="types">
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" title="" id="norone" class="nor" value="更 多"/>
+                <div class="typhide">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" id="nortwo" title="" class="nor" value="更 多"/>
+                <div class="typhide one">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" class="nor" title="" value="更 多"/>
+                <div class="typhide three">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" class="nor" title="" value="更 多"/>
+                <div class="typhide three">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" class="nor" title="" value="更 多"/>
+                <div class="typhide four">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types one">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" class="nor" title="" value="更 多"/>
+                <div class="typhide five">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+            <dl class="types two">
+                <dt><span class="typebig">品牌</span></dt><!--typebig-->
+
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                <input type="button" class="nor" title="" value="更 多"/>
+                <div class="typhide six">
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                    <dd><a href="#"><span class="typesm">金龙鱼</span></a></dd>
+                </div>
+            </dl>
+        </div>
+    </div><!--typeall end-->
+    <div class="prorder">
+        <div class="pr-ph">
+            <a href="#"><span class="pr ph">综合排行</span></a>
+            <a href="#"><span class="pr rq">人气</span></a>
+            <a href="#"><span class="pr xl">销量</span></a>
+            <a href="#"><span class="pr xy">信用</span></a>
+            <a href="#"><span class="pr jg">价格</span></a>
+            <!-- <label >¥</label>-->
+            <input type="text" class="minjg input" placeholder="¥"/>
+            <img src="img/jg.png" class="jgimg">
+            <input type="text" class="maxjg input" placeholder="¥"/>
+            <div class="leftBar">
+                <a href="javascript:;" class="fh-a"><span class="pr-fh">发货地<img src="img/more1.png"/></span></a>
+                <div class="pr-fhd">
+                    <div class="fhd one">
+                        <p class="sacp">同城：<span class="sac">苏州</span></p>
+                        <ul>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北位京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="fhd two">
+                        <ul>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北位京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="fhd three">
+                        <ul>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北位京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li><a href="#"><span>北京</span></a></li>
+                            <li class="nr"><a href="#"><span>北京</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="fhd-in">
+                        <input class="inp input" type="text" placeholder="多个地区用逗号分隔"/><input type="button" class="btn"
+                                                                                             value="搜索"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pr-ch">
+            <input class="my" title="" type="checkbox" value="mianyou"/>免邮
+            <input type="checkbox" title="" value="manjian"/>满减
+            <input type="checkbox" title="" value="mansong"/>满送
+        </div>
+    </div>
+    <div class="prBox">
+        <div class="prBox show" id="prBox" data-bind="foreach:proList">
+            <div class="prsBox left">
+                <a href="#" data-bind="click:$root.checkClick">
+                    <div class="prs img">
+                        <img data-bind="attr:{src:src}"/><!-- src="img/6.png" -->
+                    </div>
+                    <div class="prs txt">
+                        <p class="prname" data-bind="text:detail">农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g</p>
+                        <span class="prsj" data-bind="text:price">¥6.00</span>
+                        <p class="prfhd">
+                            发货地：
+                            <span class="prfha" data-bind="text:prfha">山东</span>
+                            <span class="prfhs" data-bind="text:prfhs">菏泽</span>
+                        </p>
+                        <p class="prxl">
+                            销量：
+                            <span class="prxla" data-bind="text:saled">10</span>件</p>
+                    </div>
+                </a>
+            </div>
+		</div>
+        <div class="prlist">
+            <ul>
+                <li><a href="#"><img src="img/ar1.png"/></a></li>
+                <li><a href="#"><img src="img/ar2.png"/></a></li>
+                <li><a href="#"><span class="num">1</span></a></li>
+                <li><a href="#"><span class="num">2</span></a></li>
+                <li><a href="#"><span class="num">3</span></a></li>
+                <li><a href="#"><span class="num">4</span></a></li>
+                <li><a href="#"><span class="num">5</span></a></li>
+                <li class="more"><a href="#"><span class="num">··· ···</span></a></li>
+                <li><a href="#"><img src="img/ar3.png"/></a></li>
+                <li><a href="#"><img src="img/ar4.png"/></a></li>
+            </ul>
+        </div>
+    </div><!--type end-->
+</div>
+<div class="footer">
+    <div class="comWidth">
+        <div class="footer_service">
+            <div class="service_list">
+                <img src="img/new.png">
+                <dl>
+                    <dt>新手上路</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/pay.png">
+                <dl>
+                    <dt>付款方式</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/car.png">
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/protect.png">
+                <dl class="protect">
+                    <dt>消费者保障</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+            <div class="service_list">
+                <img src="img/partner.png">
+                <dl>
+                    <dt>招商合作</dt>
+                    <dd>购物流程</dd>
+                    <dd>商品验货与签收</dd>
+                    <dd>联系客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+            </div><!--service_list-->
+        </div><!--footer_service-->
+        <div class="footerBottom">
+            <div class="footer_link">
+                <a href="#">首页</a>
+                <img src="img/footerImg.png">
+                <a href="#">关于我们</a>
+                <img src="img/footerImg.png">
+                <a href="#">联系我们</a>
+                <img src="img/footerImg.png">
+                <a href="#">商家入驻</a>
+            </div><!--footer_link-->
+            <div class="record_number">
+                备案号：苏ICP备16029992号
+            </div><!--record_number-->
+        </div><!--footerBottom-->
+    </div><!--comWidth-->
+</div><!--footer-->
+<div class="mb_793"></div>
+</body>
+<script src="js/knockout-3.4.0.js"></script>
+<script>
+	var product = new product();
+	function product(){
+		var self = this;
+		
+		self.proList = 
+			ko.observableArray([{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20",
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},{
+				src:"img/6.png",
+				detail:"农家自产石磨纯高粱面新货红高粱粉馒头面粉现磨五谷杂粮粉500g",
+				price:"6",
+				prfha:"山东",
+				prfhs:"菏泽",
+				saled:"20"
+			},
+			])
+	}
+	
+	ko.applyBindings(product, document.getElementById("prBox"));
+</script>
+</html>
